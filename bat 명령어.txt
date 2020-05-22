@@ -1,0 +1,65 @@
+파일 추출
+dir *.* /a-d /b
+
+폴더 추출
+dir *.* /ad /b
+
+명령어들
+http://playgame.egloos.com/2230571
+
+for 문
+http://playgame.egloos.com/1407399
+http://playgame.egloos.com/1534206
+
+
+setlocal EnableDelayedExpansion
+- !변수! 형태의 변수는 값의 치환을 선처리하지 않는다.
+- !로 둘러쌓인 변수는 치환이 선처리되지 않고 FOR문이 끝날때까지 변수로 취급되므로 프로그램이 정상적으로 작동한다
+
+
+color
+   0 = 검은색      8 = 회색
+   1 = 파란색      9 = 연한 파란색
+   2 = 녹색        A = 연한 녹색
+   3 = 청록색      B = 연한 청록색
+   4 = 빨간색      C = 연한 빨간색
+   5 = 자주색      D = 연한 자주색
+   6 = 노란색      E = 연한 노란색
+   7 = 흰색        F = 밝은 흰색
+
+예 : color f0
+
+
+파일명 변경 및 폴더 분류
+https://blog.naver.com/mokomoji/221105236788
+
+
+http://mwultong.blogspot.com/
+
+명령어들
+https://ss64.com/nt/
+
+코드 페이지
+https://en.wikipedia.org/wiki/Code_page
+
+cmd 명령어
+
+
+https://ss64.com/nt/syntax-args.html
+%~f1 - expands %1 to a Fully qualified path name - C:\utils\MyFile.txt
+%~d1 - expands %1 to a Drive letter only - C:
+%~p1 - expands %1 to a Path only - \utils\
+%~n1 - expands %1 to a file Name, or if only a path is present (with no trailing backslash) - the last folder in that path
+%~x1 - expands %1 to a file eXtension only - .txt
+%~s1 - changes the meaning of f, n and x to reference the Short name (see note below)
+%~1 - expand %1 removing any surrounding quotes (")
+%~a1 - display the file attributes of %1
+%~t1 - display the date/time of %1
+%~z1 - display the file size of %1
+%~$PATH:1 - search the PATH environment variable and expand %1 to the fully qualified name of the first match found.
+The modifiers above can be combined:
+%~dp1 - expands %1 to a drive letter and path only
+%~nx2 - expands %2 to a file name and extension only
+
+
+
